@@ -13,9 +13,15 @@ def a_plus_abs_b(a, b):
     3
     """
     if b < 0:
+<<<<<<< HEAD
         f = _____
     else:
         f = _____
+=======
+        f = -b
+    else:
+        f = b
+>>>>>>> origin/main
     return f(a, b)
 
 def a_plus_abs_b_syntax_check():
@@ -42,7 +48,11 @@ def two_of_three(i, j, k):
     >>> two_of_three(5, 5, 5)
     50
     """
+<<<<<<< HEAD
     return _____
+=======
+    return i * i + j * j + k * k - max(i, j, k) * max(i, j, k)
+>>>>>>> origin/main
 
 def two_of_three_syntax_check():
     """Check that your two_of_three code consists of nothing but a return statement.
