@@ -25,4 +25,5 @@ def double_eights(n):
     return False
         
 if __name__ == '__main__':
-    double_eights(88)
+    
+
