@@ -22,7 +22,19 @@ def roll_dice(num_rolls, dice=six_sided):
     assert num_rolls > 0, 'Must roll at least once.'
     # BEGIN PROBLEM 1
     "*** YOUR CODE HERE ***"
-    
+    score = 0
+    i = 0
+    flag = False
+    while num_rolls > 0:
+        temp = dice()
+        if temp == 1:
+            flag = True
+        score = score + temp
+        num_rolls = num_rolls - 1
+    if flag == True:
+        return 1
+    else:
+        return score
     # END PROBLEM 1
 
 
@@ -31,10 +43,11 @@ def boar_brawl(player_score, opponent_score):
 
     player_score:     The total score of the current player.
     opponent_score:   The total score of the other player.
-
+ 
     """
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
+    
     # END PROBLEM 2
 
 
@@ -48,7 +61,7 @@ def take_turn(num_rolls, player_score, opponent_score, dice=six_sided):
     dice:            A function that simulates a single dice roll outcome.
     """
     # Leave these assert statements here; they help check for errors.
-    assert type(num_rolls) == int, 'num_rolls must be an integer.'
+    assert type(num_rolls) == int, 'num_rolls must be an integer.' 
     assert num_rolls >= 0, 'Cannot roll a negative number of dice in take_turn.'
     assert num_rolls <= 10, 'Cannot roll more than 10 dice.'
     # BEGIN PROBLEM 3

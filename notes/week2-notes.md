@@ -106,3 +106,11 @@ def make_adder(n):
 - Express general methods of computation
 - Remove repetition from programs
 - Seperate concerns among functions
+
+### The Project 1: Hog
+
+**Rule:** 
+2 players alternate roll dice, to choose the one that the 1st's score >= 100.
+For Each Player:
+- choose the number of dice, <= 10
+- if any dice turns 1, the score = 1; else score = sum of each dice number
