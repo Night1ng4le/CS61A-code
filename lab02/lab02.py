@@ -31,6 +31,7 @@ def composite_identity(f, g):
     False
     """
     "*** YOUR CODE HERE ***"
+    
 
 
 def sum_digits(y):
